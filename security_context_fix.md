@@ -119,7 +119,7 @@
         - SYS_CHROOT
         - SETFCAPL</td>
         <td>FALSE</td>
-        <td>FALSE</td>
+        <td>FALSE</td>  
         <td>RuntimeDefault</td>
         <td>TRUE</td>
         <td>NA</td>
