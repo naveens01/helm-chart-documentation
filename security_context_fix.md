@@ -92,3 +92,35 @@
         <td>FALSE </td>
         <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
     </tr>
+    </tr>
+       <tr>
+        <td>esexp</td>
+        <td>Yes</td>
+        <td>esexp</td>
+        <td>elasticsearch-exporter:v1.2.1</td>
+        <td>Yes</td>
+        <td>webmethodsadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop:
+        - SETPCAP
+        - MKNOD
+        - AUDIT_WRITE
+        - CHOWN
+        - NET_RAW
+        - DAC_OVERRIDE
+        - FOWNER
+        - FSETID
+        - KILL
+        - SETGID
+        - SETUID
+        - NET_BIND_SERVICE
+        - SYS_CHROOT
+        - SETFCAPL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
