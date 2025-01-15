@@ -104,10 +104,7 @@
         <td>1724</td>
         <td>TRUE</td>
         <td>drop:
-        - SETPCAP<br></br>- MKNOD<br></br>- AUDIT_WRITE<br></br>
-        - CHOWN
-        - NET_RAW
-        - DAC_OVERRIDE
+        - SETPCAP<br></br>- MKNOD<br></br>- AUDIT_WRITE<br></br>- CHOWN<br></br>- NET_RAW<br></br>- DAC_OVERRIDE
         - FOWNER
         - FSETID
         - KILL
