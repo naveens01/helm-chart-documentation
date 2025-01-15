@@ -25,6 +25,25 @@
     </tr>
     <tr>
         <td rowspan=22>Deployment</td>
+        <td rowspan="2">admin-api</td>
+        <td rowspan="2">Yes</td>
+        <td>init</td>
+        <td>Yes</td>
+        <td>assetcatalog</td>
+        <td>asset-catalog:11.1.3.0.167</td>
+        <td>Yes</td>
+        <td>webmethodsadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
+    </tr>
+    <tr>
         <td>assetcatalog</td>
         <td>Yes</td>
         <td>assetcatalog</td>
@@ -41,6 +60,7 @@
         <td>FALSE</td>
         <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
     </tr>
+    
      <tr>
         <td>engine</td>
         <td>Yes</td>
