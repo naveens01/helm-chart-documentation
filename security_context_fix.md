@@ -104,7 +104,7 @@
         <td>1724</td>
         <td>TRUE</td>
         <td>drop:
-        - SETPCAP
+        - SETPCAP <br></br>
         - MKNOD
         - AUDIT_WRITE
         - CHOWN
