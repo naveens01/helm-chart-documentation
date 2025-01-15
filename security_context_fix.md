@@ -104,15 +104,7 @@
         <td>1724</td>
         <td>TRUE</td>
         <td>drop:
-        - SETPCAP<br></br>- MKNOD<br></br>- AUDIT_WRITE<br></br>- CHOWN<br></br>- NET_RAW<br></br>- DAC_OVERRIDE
-        - FOWNER
-        - FSETID
-        - KILL
-        - SETGID
-        - SETUID
-        - NET_BIND_SERVICE
-        - SYS_CHROOT
-        - SETFCAPL</td>
+        - SETPCAP<br></br>- MKNOD<br></br>- AUDIT_WRITE<br></br>- CHOWN<br></br>- NET_RAW<br></br>- DAC_OVERRIDE<br></br>- FOWNER<br></br>- FSETID<br></br>- KILL<br></br>- SETGID<br></br>- SETUID<br></br>- NET_BIND_SERVICE<br></br>- SYS_CHROOT<br></br>- SETFCAPL</td>
         <td>FALSE</td>
         <td>FALSE</td>  
         <td>RuntimeDefault</td>
