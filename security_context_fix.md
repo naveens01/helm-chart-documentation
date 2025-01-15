@@ -25,8 +25,7 @@
     </tr>
     <tr>
         <td rowspan=22>Deployment</td>
-        <td rowspan="2">admin-api</td>
-        <td rowspan="2">Yes</td>
+
         <td>init</td>
         <td>Yes</td>
         <td>assetcatalog</td>
