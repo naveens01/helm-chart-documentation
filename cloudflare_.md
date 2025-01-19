@@ -67,7 +67,8 @@ Kindly check these steps for the Cloudflare setup [Cloudflare setup](../common/c
 ### ArgoCD Sync
 Ensure all API Control Plane applications (whichever are commited) are synced properly in ArgoCD.
 
-> :warning: ArgoCD will automatically sync the changes if the auto-sync option is enabled. DO NOT FORCE SYNC ANY APPLICATION UNLESS ABSOLUTELY REQUIRED.
+> [!IMPORTANT]
+> ArgoCD will automatically sync the changes if the auto-sync option is enabled. DO NOT FORCE SYNC ANY APPLICATION UNLESS ABSOLUTELY REQUIRED.
  
 Update the encoded certificate and key in your Secret Manager or Key Vault
 
