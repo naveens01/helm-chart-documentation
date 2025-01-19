@@ -110,7 +110,8 @@ Once the `tenant-manager` pods are up and running, refresh the tenant secrets wi
      }'
      ```
 
-> :information_source: Kindly use TM admin creds to generate Bearer-token
+> [!IMPORTANT]
+>  Kindly use TM admin creds to generate Bearer-token
 
 3. **Repeat for all tenants**:
    - Replace `<tenant-name>` in the cURL command for each tenant in the environment and re-execute.
@@ -146,7 +147,8 @@ After completing the previous steps, configure traffic switching in Cloudflare t
    - **Proxy Status**: `Proxied`  
    - **TTL**: `Auto`
 
-> :information_source: **Wildcard DNS (`*`)** will match all subdomains. This ensures that any subdomain not explicitly defined will still resolve to the specified Load Balancer or IP address.  
+> [!IMPORTANT]
+>  **Wildcard DNS (`*`)** will match all subdomains. This ensures that any subdomain not explicitly defined will still resolve to the specified Load Balancer or IP address.  
 
 
 ## Post-Rollout Steps
