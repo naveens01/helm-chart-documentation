@@ -149,3 +149,35 @@ After completing the previous steps, configure traffic switching in Cloudflare t
 > :information_source: **Wildcard DNS (`*`)** will match all subdomains. This ensures that any subdomain not explicitly defined will still resolve to the specified Load Balancer or IP address.  
 
 
+## Post-Rollout Steps
+
+### 1. Verify Gainsight Changes
+
+- Ensure the **UI pod** is up and running to confirm that any Gainsight-related changes are functioning properly.
+
+### 2. Cloudflare Analytics & Logs
+
+- **Navigate to Cloudflare Analytics & Logs** to ensure that HTTP traffic is being routed correctly:
+  1. Go to the **Analytics** tab.
+  2. In the **HTTP Traffic** section, confirm that the total number of requests is being displayed.
+  3. Ensure that traffic is flowing through Cloudflare's edge network, as expected.
+
+
+### 3. Inspect Tenant Traffic
+
+- **Inspect Tenant Network Traffic**:
+
+  1. Log into a tenant.
+  2. Open **DevTools** (Right-click -> Inspect, or press `F12` on most browsers).
+  3. Navigate to the **Network** tab.
+  4. Interact with any functionality in the application (e.g., click a button or load a page).
+  5. Confirm that requests are being routed through **Cloudflare** by checking the `Server` field in the response headers.
+
+
+> [!WARNING] If the server is not listed as **Cloudflare**, ensure that the DNS records and proxy settings are correctly configured in Cloudflare.
+
+
+
+
+
+
