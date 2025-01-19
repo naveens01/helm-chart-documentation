@@ -29,7 +29,8 @@ parameters:
 
 Also update the correct reference in the target file of your environment.
 
-> :information_source: The order/type of imports in your target file depends on your environment. Please update accordingly.
+> [!NOTE]
+> The order/type of imports in your target file depends on your environment. Please update accordingly.
 
 ###### inventory/targets/azure/prod/api/api-prod-06-az-westeurope.yml
 
