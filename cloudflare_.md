@@ -174,7 +174,8 @@ After completing the previous steps, configure traffic switching in Cloudflare t
   5. Confirm that requests are being routed through **Cloudflare** by checking the `Server` field in the response headers.
 
 
-> [!WARNING] If the server is not listed as **Cloudflare**, ensure that the DNS records and proxy settings are correctly configured in Cloudflare.
+> [!WARNING]
+>  If the server is not listed as **Cloudflare**, ensure that the DNS records and proxy settings are correctly configured in Cloudflare.
 
 
 
