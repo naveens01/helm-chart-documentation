@@ -22,7 +22,7 @@
         <th>Non Root</th>
     </tr>
     <tr>
-        <td rowspan="10">Deployment</td>
+        <td rowspan="11">Deployment</td>
         <td rowspan="2">assetcatalog</td>
         <td>Yes</td>
         <td>wait-for-elasticsearch</td>
@@ -156,6 +156,23 @@
     </tr>
     <tr>
         <td>esexp</td>
+        <td>Yes</td>
+        <td>esexp</td>
+        <td>elasticsearch-exporter:v1.2.1</td>
+        <td>Yes</td>
+        <td>webmethodsadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop:<br> SETPCAP, MKNOD, AUDIT_WRITE, CHOWN, NET_RAW, DAC_OVERRIDE, FOWNER, FSETID, KILL, SETGID, SETUID, NET_BIND_SERVICE, SYS_CHROOT, SETFCAPL </td>
+        <td>FALSE</td>
+        <td>FALSE</td>  
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+    <tr>
+        <td>ctrlplane-nginx-ingress-ingress-nginx-controller</td>
         <td>Yes</td>
         <td>esexp</td>
         <td>elasticsearch-exporter:v1.2.1</td>
