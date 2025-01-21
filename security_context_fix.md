@@ -206,8 +206,8 @@
         <td>readOnlyRootFilesystem is set to false as application requires permission to create directory for snapshots</td>
     </tr>
     <tr>
-        <td rowspan="2">es</td>
-        <td>cplane-tenant-manager</td>
+        <td rowspan="2">cplane-tenant-manager</td>
+        <td>Yes</td>
         <td>clone-repos</td>
         <td>kub-devops-utility:latest</td>
         <td>Yes</td>
