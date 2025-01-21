@@ -22,7 +22,7 @@
         <th>Non Root</th>
     </tr>
     <tr>
-        <td rowspan="11">Deployment</td>
+        <td rowspan="10">Deployment</td>
         <td rowspan="2">assetcatalog</td>
         <td>Yes</td>
         <td>wait-for-elasticsearch</td>
