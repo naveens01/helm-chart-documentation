@@ -22,7 +22,7 @@
         <th>Non Root</th>
     </tr>
     <tr>
-        <td rowspan="9">Deployment</td>
+        <td rowspan="10">Deployment</td>
         <td rowspan="2">assetcatalog</td>
         <td>Yes</td>
         <td>wait-for-elasticsearch</td>
@@ -170,6 +170,22 @@
         <td>RuntimeDefault</td>
         <td>TRUE</td>
         <td>NA</td>
+    </tr>
+            <td>tms-deploy</td>
+        <td>Yes</td>
+        <td>cplane-tms</td>
+        <td>kub-wmio-tms:8f136ef</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>  
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission for Spring Boot application to start tomcat web server</td>
     </tr>
        <tr>
         <td rowspan="4">Statefulset</td>
