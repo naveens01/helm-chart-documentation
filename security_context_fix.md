@@ -208,35 +208,35 @@
     <tr>
         <td rowspan="2">es</td>
         <td>Yes</td>
-        <td> init-sysctl</td>
-        <td>alpine:latest</td>
+        <td>clone-repos</td>
+        <td>kub-devops-utility:latest</td>
         <td>Yes</td>
-        <td>root</td>
-        <td>0</td>
-        <td>NA</td>
-        <td>FALSE</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
         <td>drop ALL</td>
-        <td>TRUE</td>
-        <td>TRUE</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
         <td>RuntimeDefault</td>
         <td>FALSE</td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to write max_map_count</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to create a temporary directory for the SSH agent</td>
     </tr>
     <tr>
         <td>Yes</td>
-        <td>cplane-es-sts</td>
-        <td>elasticsearch:8.14.3</td>
+        <td>cplane-tenant-manager</td>
+        <td>kub-tenant-manager:c5e50f</td>
         <td>Yes</td>
-        <td>elasticsearch</td>
-        <td>1000</td>
-        <td>1000</td>
-        <td>FALSE</td>
-        <td>drop ALL, add IPC_LOCK,SYS_RESOURCE,SYS_ADMIN,DAC_OVERRIDE,DAC_READ_SEARCH</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
         <td>FALSE</td>
         <td>FALSE</td>
         <td>RuntimeDefault</td>
         <td>FALSE</td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to create directory for snapshots</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to write a certificate to a path</td>
     </tr>
     </tr>
        <tr>
