@@ -207,7 +207,7 @@
     </tr>
     <tr>
         <td rowspan="2">es</td>
-        <td>Yes</td>
+        <td>cplane-tenant-manager</td>
         <td>clone-repos</td>
         <td>kub-devops-utility:latest</td>
         <td>Yes</td>
