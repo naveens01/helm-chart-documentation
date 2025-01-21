@@ -1,5 +1,3 @@
-# Security Context
-
 <table>
   <tbody>
     <tr>
@@ -24,12 +22,126 @@
         <th>Non Root</th>
     </tr>
     <tr>
-        <td rowspan=22>Deployment</td>
-
-        <td>init</td>
+        <td rowspan="9">Deployment</td>
+        <td rowspan="2">assetcatalog</td>
+        <td>Yes</td>
+        <td>wait-for-elasticsearch</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+    <tr>
         <td>Yes</td>
         <td>assetcatalog</td>
         <td>asset-catalog:11.1.3.0.167</td>
+        <td>Yes</td>
+        <td>webmethodsadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
+    </tr>
+  <tr>
+    <td rowspan="2">engine</td>
+    <td>Yes</td>
+    <td>wait-for-elasticsearch</td>
+    <td>kub-devops-utility:latest</td>
+    <td>Yes</td>
+    <td>sagadmin</td>
+    <td>1724</td>
+    <td>1724</td>
+    <td>TRUE</td>
+    <td>drop ALL</td>
+    <td>FALSE</td>
+    <td>FALSE</td>
+    <td>RuntimeDefault</td>
+    <td>TRUE</td>
+    <td>NA</td>
+</tr>
+<tr>
+    <td>Yes</td>
+    <td>engine</td>
+    <td>engine:11.1.3.0.170</td>
+    <td>Yes</td>
+    <td>webmethodsadmin</td>
+    <td>1724</td>
+    <td>1724</td>
+    <td>TRUE</td>
+    <td>drop ALL</td>
+    <td>FALSE</td>
+    <td>FALSE</td>
+    <td>RuntimeDefault</td>
+    <td>FALSE</td>
+    <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
+</tr>
+  <tr>
+    <td rowspan="2">ingress</td>
+    <td>Yes</td>
+    <td>wait-for-elasticsearch</td>
+    <td>kub-devops-utility:latest</td>
+    <td>Yes</td>
+    <td>sagadmin</td>
+    <td>1724</td>
+    <td>1724</td>
+    <td>TRUE</td>
+    <td>drop ALL</td>
+    <td>FALSE</td>
+    <td>FALSE</td>
+    <td>RuntimeDefault</td>
+    <td>TRUE</td>
+    <td>NA</td>
+</tr>
+<tr>
+        <td>Yes</td>
+        <td>ingress</td>
+        <td>ingress:11.1.3.0.177</td>
+        <td>Yes</td>
+        <td>webmethodsadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
+</tr>
+      <tr>
+    <td rowspan="2">ui</td>
+    <td>Yes</td>
+    <td>wait-for-elasticsearch</td>
+    <td>kub-devops-utility:latest</td>
+    <td>Yes</td>
+    <td>sagadmin</td>
+    <td>1724</td>
+    <td>1724</td>
+    <td>TRUE</td>
+    <td>drop ALL</td>
+    <td>FALSE</td>
+    <td>FALSE</td>
+    <td>RuntimeDefault</td>
+    <td>TRUE</td>
+    <td>NA</td>
+</tr>
+    <tr>
+        <td>Yes</td>
+        <td>ui</td>
+        <td>ui:11.1.3.0.438</td>
         <td>Yes</td>
         <td>webmethodsadmin</td>
         <td>1724</td>
@@ -43,76 +155,6 @@
         <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
     </tr>
     <tr>
-        <td>assetcatalog</td>
-        <td>Yes</td>
-        <td>assetcatalog</td>
-        <td>asset-catalog:11.1.3.0.167</td>
-        <td>Yes</td>
-        <td>webmethodsadmin</td>
-        <td>1724</td>
-        <td>1724</td>
-        <td>TRUE</td>
-        <td>drop ALL</td>
-        <td>FALSE</td>
-        <td>FALSE</td>
-        <td>RuntimeDefault</td>
-        <td>FALSE</td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
-    </tr>
-    
-     <tr>
-        <td>engine</td>
-        <td>Yes</td>
-        <td>engine</td>
-        <td>engine:11.1.3.0.170</td>
-        <td>Yes</td>
-        <td>webmethodsadmin</td>
-        <td>1724</td>
-        <td>1724</td>
-        <td>TRUE</td>
-        <td>drop ALL</td>
-        <td>FALSE</td>
-        <td>FALSE</td>
-        <td>RuntimeDefault</td>
-        <td>FALSE </td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
-    </tr>
-           <tr>
-        <td>ingress</td>
-        <td>Yes</td>
-        <td>ui</td>
-        <td>ingress:11.1.3.0.177</td>
-        <td>Yes</td>
-        <td>webmethodsadmin</td>
-        <td>1724</td>
-        <td>1724</td>
-        <td>TRUE</td>
-        <td>drop ALL</td>
-        <td>FALSE</td>
-        <td>FALSE</td>
-        <td>RuntimeDefault</td>
-        <td>FALSE </td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
-    </tr>
-       <tr>
-        <td>ui</td>
-        <td>Yes</td>
-        <td>ui</td>
-        <td>ui:11.1.3.0.438</td>
-        <td>Yes</td>
-        <td>webmethodsadmin</td>
-        <td>1724</td>
-        <td>1724</td>
-        <td>TRUE</td>
-        <td>drop ALL</td>
-        <td>FALSE</td>
-        <td>FALSE</td>
-        <td>RuntimeDefault</td>
-        <td>FALSE </td>
-        <td>readOnlyRootFilesystem is set to false as application requires permission to create log directory</td>
-    </tr>
-    </tr>
-       <tr>
         <td>esexp</td>
         <td>Yes</td>
         <td>esexp</td>
@@ -122,10 +164,166 @@
         <td>1724</td>
         <td>1724</td>
         <td>TRUE</td>
-        <td>drop:<br></br> SETPCAP, MKNOD, AUDIT_WRITE, CHOWN, NET_RAW, DAC_OVERRIDE, FOWNER, FSETID, KILL, SETGID, SETUID, NET_BIND_SERVICE, SYS_CHROOT, SETFCAPL </td>
+        <td>drop:<br> SETPCAP, MKNOD, AUDIT_WRITE, CHOWN, NET_RAW, DAC_OVERRIDE, FOWNER, FSETID, KILL, SETGID, SETUID, NET_BIND_SERVICE, SYS_CHROOT, SETFCAPL </td>
         <td>FALSE</td>
         <td>FALSE</td>  
         <td>RuntimeDefault</td>
         <td>TRUE</td>
         <td>NA</td>
     </tr>
+       <tr>
+        <td rowspan="2">Statefulset</td>
+        <td rowspan="2">es</td>
+        <td>Yes</td>
+        <td> init-sysctl</td>
+        <td>alpine:latest</td>
+        <td>Yes</td>
+        <td>root</td>
+        <td>0</td>
+        <td>NA</td>
+        <td>FALSE</td>
+        <td>drop ALL</td>
+        <td>TRUE</td>
+        <td>TRUE</td>
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to write max_map_count</td>
+    </tr>
+    <tr>
+        <td>Yes</td>
+        <td>cplane-es-sts</td>
+        <td>elasticsearch:8.14.3</td>
+        <td>Yes</td>
+        <td>elasticsearch</td>
+        <td>1000</td>
+        <td>1000</td>
+        <td>FALSE</td>
+        <td>drop ALL, add IPC_LOCK,SYS_RESOURCE,SYS_ADMIN,DAC_OVERRIDE,DAC_READ_SEARCH</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>FALSE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to create directory for snapshots</td>
+    </tr>
+    </tr>
+       <tr>
+        <td rowspan="6">Job</td>
+        <td rowspan="2">es-create-repo-slm-policy-job</td>
+        <td>Yes</td>
+        <td>wait-for-elasticsearch</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+    <tr>
+        <td>Yes</td>
+        <td>es-repo-create-slm-policy</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin </td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>FALSE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+        <tr>
+        <td rowspan="2">es-manage-ilm-policy-job</td>
+        <td>Yes</td>
+        <td>wait-for-elasticsearch</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+    <tr>
+        <td>Yes</td>
+        <td>es-manage-ilm-policy</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+            <tr>
+        <td rowspan="2">es-snapshot-restore-job</td>
+        <td>Yes</td>
+        <td>wait-for-elasticsearch</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+    <tr>
+        <td>Yes</td>
+        <td>es-restore-backup</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+ </tr>
+       <tr>
+        <td rowspan="1">CronJob</td>
+        <td>orphan-storage-cleanup-job</td>
+        <td>Yes</td>
+        <td>orphan-storage-cleanup</td>
+        <td>kub-devops-utility:latest</td>
+        <td>Yes</td>
+        <td>sagadmin</td>
+        <td>1724</td>
+        <td>1724</td>
+        <td>TRUE</td>
+        <td>drop ALL</td>
+        <td>FALSE</td>
+        <td>FALSE</td>
+        <td>RuntimeDefault</td>
+        <td>TRUE</td>
+        <td>NA</td>
+    </tr>
+  </tbody>
+</table>
