@@ -174,19 +174,19 @@
     <tr>
         <td>ctrlplane-nginx-ingress-ingress-nginx-controller</td>
         <td>Yes</td>
-        <td>esexp</td>
-        <td>elasticsearch-exporter:v1.2.1</td>
+        <td>controller</td>
+        <td>registry.k8s.io/ingress-nginx/controller:v1.7.0</td>
         <td>Yes</td>
-        <td>webmethodsadmin</td>
-        <td>1724</td>
-        <td>1724</td>
+        <td>www-data</td>
+        <td>101</td>
+        <td>82</td>
         <td>TRUE</td>
-        <td>drop:<br> SETPCAP, MKNOD, AUDIT_WRITE, CHOWN, NET_RAW, DAC_OVERRIDE, FOWNER, FSETID, KILL, SETGID, SETUID, NET_BIND_SERVICE, SYS_CHROOT, SETFCAPL </td>
-        <td>FALSE</td>
-        <td>FALSE</td>  
-        <td>RuntimeDefault</td>
+        <td>add NET_BIND_SERVICE, drop ALL</td>
         <td>TRUE</td>
-        <td>NA</td>
+        <td>TRUE</td>  
+        <td>No explicit value set. Default:Unconfined</td>
+        <td>TRUE</td>
+        <td>readOnlyRootFilesystem is set to false as application requires permission to write fake ssl certificates to a directory</td>
     </tr>
     <tr>
             <td>tms-deploy</td>
