@@ -45,7 +45,39 @@ Example Trust Policy:
 
 ```
 IAM Policy
-
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucketVersions",
+                "s3:ListBucket",
+                "s3:GetBucketAcl",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": [
+                "arn:aws:s3:::ipaas-b0003-wm-apicp"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObjectAcl",
+                "s3:GetObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::ipaas-b0003-wm-apicp/*"
+            ]
+        }
+    ]
+}
+```
 
 
 
@@ -88,3 +120,81 @@ The following applications will be deployed via ArgoCD:
 - Tenant Management System (TMS)
 
 ---
+
+## Container Registry (ICR)
+
+- Images are pulled from **IBM Container Registry (ICR)**.
+- Two registries are used:
+    - **Non-Production:** `icr.io/ipaas-non-prod`
+    - **Production:** `icr.io/ipaas-prod`
+
+### Example Repository
+
+```bash
+icr.io/ipaas-non-prod/wm-apicp/assetcatalog
+```
+
+# OCI
+
+The `ctrlplane` chart is pushed to the OCI repository.
+
+---
+
+# DNS and TLS Management
+
+- DNS is managed via **Cloud Internet Services (CIS)**.
+- Certificate Management is automated.
+- TLS Certificates follow conventions outlined in:  
+  [MCSP Environments - TLS Certificates](https://github.com/ibm-webmethods/kub-helm-charts-common/wiki/MCSP-Environments#tls-certificates)
+
+---
+
+# Internal Application Authentication
+
+- Authentication for internal components such as **TM**, **TMS**, and **IPAAS platform** is handled via **MCSP Token**.
+
+### Example Token Request
+
+```sh
+curl -X POST 'https://account-iam.platform.test.saas.ibm.com/api/2.0/accounts/<INTERNAL-ACCOUNT-ID>/apikeys/token' \
+-H 'accept: application/json' \
+-H 'Mcsp-ApiKey: <MCSP-API-KEY>' \
+-H 'Content-Type: application/json'
+```
+
+# Monitoring Setup
+
+- In OpenShift, **ServiceMonitor** resources have been moved to tenant-specific configurations.
+- **Prometheus Agent** is used for monitoring.
+
+---
+
+# Directory for Setting Values
+
+- Refer to the **Ipaas-argo** repository.
+
+---
+
+# Publish Image in TMS
+
+- Append the **image digest** when publishing the image in **TMS**.
+
+For details, refer to:  
+[kub-wmio-tms/docs/API.md at develop](https://github.com/ibm-webmethods/kub-wmio-tms/blob/develop/docs/API.md#publish-release)
+
+---
+
+# Post-Setup Activities
+
+## 1. Validate Monitoring Setup
+
+- Confirm that monitoring components are correctly collecting metrics.
+- Verify **Prometheus** scrape targets and alerts.
+
+## 2. Validate Log Collection
+
+- Ensure logs from all components are visible in **Grafana** (Loki datasource).
+- Confirm logs are being collected with correct labels:
+    - `namespace`
+    - `pod`
+    - `container`
