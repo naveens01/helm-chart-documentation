@@ -7,6 +7,8 @@
 - **Dataplane**
 
 ---
+> [!IMPORTANT]
+> APICP proceeding with opensearch for mcsp [ 2.18 ]
 
 ## Infrastructure Components
 
