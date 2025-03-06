@@ -8,7 +8,7 @@
 
 ---
 > [!IMPORTANT]
-> APICP proceeding with opensearch for mcsp [ 2.18 ]
+> APICP proceeding with opensearch [ 2.18 ] for mcsp
 
 ## Infrastructure Components
 
