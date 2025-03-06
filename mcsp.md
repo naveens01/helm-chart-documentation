@@ -43,7 +43,7 @@ Example Trust Policy:
     ]
 }
 
-
+```
 IAM Policy
 
 
