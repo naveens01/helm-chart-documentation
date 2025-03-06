@@ -1,11 +1,5 @@
 # MCSP Setup - API Control Plane
 
-## Overview
-
-This document outlines the technical setup process for the **MCSP API Control Plane**, covering the boundary, regional, and data planes, along with required infrastructure components and configurations.
-
----
-
 ## Cluster Information
 
 - **Boundary Control Plane**
