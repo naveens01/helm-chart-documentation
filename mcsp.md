@@ -22,7 +22,7 @@ This document outlines the technical setup process for the **MCSP API Control Pl
 
 Ensure that the **OIDC provider ID** of the **Dataplane** (where OpenSearch runs) is added to the trust policy of the control plane role.
 
-Example Trust Policy:
+Example Trust Relationship:
 
 ```json
 {
@@ -44,7 +44,12 @@ Example Trust Policy:
 }
 
 ```
-IAM Policy
+
+#### Policy
+
+Example Policy:
+
+
 ```json
 {
     "Version": "2012-10-17",
