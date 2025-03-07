@@ -10,6 +10,11 @@
 > [!IMPORTANT]
 > APICP proceeding with opensearch [ 2.18 ] for mcsp
 
+
+### Architecture Diagram
+
+Refer to the architecture diagram here: [API Control Plane Deployment Architecture](https://github.ibm.com/Cloud-Integration/ibm-ipaas-architecture/blob/feature/arch-84/docs/architecture-diagrams/api-management-saas/api-control-plane/images/api-control-plane-deployment-arch.svg)
+
 ## Infrastructure Components
 
 ### IAM Roles
