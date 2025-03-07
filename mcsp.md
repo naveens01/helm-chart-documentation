@@ -185,6 +185,10 @@ For details, refer to:
 
 ---
 
+# Tenant url
+
+- The tenant url
+
 # Post-Setup Activities
 
 ## 1. Validate Monitoring Setup
