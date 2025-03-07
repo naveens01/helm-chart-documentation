@@ -220,6 +220,13 @@ The Tenant URL follows a standardized format to ensure consistency across differ
     testtenant01.a-vir-d1.apicp.ipaas.test.automation.ibm.com
     ```
 
+# Tenant Tier  
+
+## Available Tiers  
+
+### **Standard Tier**  
+The `ipaas_standard` tier is equivalent to the **paid** tier.
+
 # Post-Setup Activities
 
 ## 1. Validate Monitoring Setup
