@@ -125,6 +125,7 @@ The following applications will be deployed via ArgoCD:
 - Tenant Manager (TM)
 - Tenant Management System (TMS)
 
+Note:  The tenant runtimes are provisoned via TM and TMs
 ---
 
 ## Container Registry (ICR)
