@@ -187,7 +187,8 @@ For details, refer to:
 
 # Tenant url
 
-- The tenant url
+- *.<cloudProvider>-<region>-<dp-id>.<capability>.ipaas.<env-id>.automation.ibm.com
+Example- testtenant02.a-vir-d1.apicp.ipaas.test.automation.ibm.com
 
 # Post-Setup Activities
 
