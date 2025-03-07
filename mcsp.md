@@ -94,6 +94,18 @@ Example Policy:
 | Dataplane               | `ipaas-b0003-d01/wm-apicp/replicate-secret-spoke` |
 | Regional Control Plane  | `ipaas-b0003-h01/wm-apicp/replicate-secret`     |
 
+
+### Required Secrets
+
+| Secret Name                               | Value / Description                                      |
+|--------------------------------|-----------------------------------------------------------------|
+| **KC_TMS_POWER_CLIENT_ID**            | `ipaas-b0003-h01-apicp-tms-power-user`                        |
+| **KC_TMS_POWER_CLIENT_SECRET**    | `xxxxxxxxxx` (Sensitive - Obtain securely)                   |
+| **IPAAS_PLATFORM_AUTH_TOKEN_CLIENT_ID**    | `provisioning-callbacks`                                      |
+| **IPAAS_PLATFORM_AUTH_TOKEN_CLIENT_SECRET** | _Obtain from the Platform Team_                     |
+| **IPAAS_PLATFORM_MTLS_KEYSTORE_PASS**  | _Steps to prepare this will be shared separately_ |
+| **OAUTH_API_KEYS**                             | _This value remains consistent across all environments_ |
+
 Refer to:  
 [MCSP Resources - Secrets Convention](https://github.com/ibm-webmethods/kub-helm-charts-common/wiki/MCSP-Resources#secrets-convention-in-aws-secrets-manager)
 
