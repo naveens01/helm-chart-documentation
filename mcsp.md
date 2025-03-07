@@ -207,6 +207,8 @@ For details, refer to:
 # Tenant URL
 
 The Tenant URL follows a standardized format to ensure consistency across different environments. Below is the general structure:
+
+
 **Format** -   *.<cloudProvider>-<region>-<dp-id>.<capability>.ipaas.<env-id>.automation.ibm.com
 
 - **Build Environment:**  
