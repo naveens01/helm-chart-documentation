@@ -228,15 +228,21 @@ The `ipaas_standard` tier is equivalent to the **paid** tier.
 
 ## OCI Activity
 
-### Pushing to Non-Prod Registry
+### Pushing to Non-Prod Registry (by DevOps)
 
-To push the Helm chart to the **non-prod** OCI registry(by devops):
+To push the Helm chart to the **non-prod** OCI registry, DevOps uses the following target:
 
 ```sh
-helm push ctrlplane-11.1.9.tgz oci://icr.io/ipaas-non-prod/wm-apicp/charts
+oci://icr.io/ipaas-non-prod/wm-apicp/charts
+
+###  Promoting Chart to Prod Registry (by CloudOps)
+```sh
+helm pull oci://icr.io/ipaas-non-prod/wm-apicp/charts --version <chart-version>
 ```
 
-
+```sh
+helm push ctrlplane-<chart-version>.tgz oci://icr.io/ipaas-prod/wm-apicp/charts
+```
 
 # Post-Setup Activities
 
