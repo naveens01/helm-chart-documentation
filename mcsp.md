@@ -234,7 +234,7 @@ To push the Helm chart to the **non-prod** OCI registry, DevOps uses the followi
 
 ```sh
 oci://icr.io/ipaas-non-prod/wm-apicp/charts
-
+```
 ###  Promoting Chart to Prod Registry (by CloudOps)
 ```sh
 helm pull oci://icr.io/ipaas-non-prod/wm-apicp/charts --version <chart-version>
@@ -243,6 +243,11 @@ helm pull oci://icr.io/ipaas-non-prod/wm-apicp/charts --version <chart-version>
 ```sh
 helm push ctrlplane-<chart-version>.tgz oci://icr.io/ipaas-prod/wm-apicp/charts
 ```
+
+### Important Note
+Whenever the chart version is updated in the **Helm chart's** `Chart.yaml` file, make sure to also update the corresponding chart version in tenant-manager.yaml in ipaas-argo
+[**tenant-manager.yaml**](https://github.ibm.com/automation-paas-cd-pipeline/ipaas-argocd/blob/main/values/wm-apicp-stack/aws-dev/tenant-manager.yaml#L25)
+
 
 # Post-Setup Activities
 
