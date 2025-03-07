@@ -104,8 +104,8 @@ Example Policy:
 | **IPAAS_PLATFORM_AUTH_TOKEN_CLIENT_ID**    | `provisioning-callbacks`                                      |
 | **IPAAS_PLATFORM_AUTH_TOKEN_CLIENT_SECRET** | _Obtain from the Platform Team_                     |
 | **IPAAS_PLATFORM_MTLS_KEYSTORE_PASS**  | _Steps to prepare this will be shared separately_ |
-| **OAUTH_API_KEYS**                             | _This value remains consistent across all environments_ |
-| **OAUTH_API_SECRET** | _This value remains consistent across all environments_ |
+| **OAUTH_API_KEYS**                             | _Product team will share to you_ |
+| **OAUTH_API_SECRET** | _Product team will share to you_ |
 
 Refer to:  
 [MCSP Resources - Secrets Convention](https://github.com/ibm-webmethods/kub-helm-charts-common/wiki/MCSP-Resources#secrets-convention-in-aws-secrets-manager)
@@ -137,8 +137,8 @@ The following applications will be deployed via ArgoCD:
 - Ingress Controller
 - Tenant Manager (TM)
 - Tenant Management System (TMS)
-
 Note:  The tenant runtimes are provisoned via TM and TMs
+
 ---
 
 ## Container Registry (ICR)
