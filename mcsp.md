@@ -207,13 +207,16 @@ For details, refer to:
 # Tenant URL
 
 The Tenant URL follows a standardized format to ensure consistency across different environments. Below is the general structure:
-**Format**  
-   *.<cloudProvider>-<region>-<dp-id>.<capability>.ipaas.<env-id>.automation.ibm.com
+**Format** -   *.<cloudProvider>-<region>-<dp-id>.<capability>.ipaas.<env-id>.automation.ibm.com
 
-Example 
-   build - buildtenant01.a-vir-d1.apicp.ipaas.dev.automation.ibm.com
-   test - testtenant01.a-vir-d1.apicp.ipaas.test.automation.ibm.com
-
+- **Build Environment:**  
+    ```
+    buildtenant01.a-vir-d1.apicp.ipaas.dev.automation.ibm.com
+    ```
+- **Test Environment:**  
+    ```
+    testtenant01.a-vir-d1.apicp.ipaas.test.automation.ibm.com
+    ```
 
 # Post-Setup Activities
 
