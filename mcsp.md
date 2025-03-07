@@ -65,7 +65,7 @@ Example Policy:
                 "s3:GetBucketLocation"
             ],
             "Resource": [
-                "arn:aws:s3:::ipaas-b0003-wm-apicp"
+                "arn:aws:s3:::<bucket-name>"
             ]
         },
         {
@@ -78,7 +78,7 @@ Example Policy:
                 "s3:DeleteObject"
             ],
             "Resource": [
-                "arn:aws:s3:::ipaas-b0003-wm-apicp/*"
+                "arn:aws:s3:::<bucket-name>/*"
             ]
         }
     ]
