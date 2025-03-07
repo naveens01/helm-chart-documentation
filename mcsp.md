@@ -220,12 +220,23 @@ The Tenant URL follows a standardized format to ensure consistency across differ
     testtenant01.a-vir-d1.apicp.ipaas.test.automation.ibm.com
     ```
 
-# Tenant Tier  
 
-## Available Tiers  
+## Tenant Tier 
 
 ### **Standard Tier**  
 The `ipaas_standard` tier is equivalent to the **paid** tier.
+
+## OCI Activity
+
+### Pushing to Non-Prod Registry
+
+To push the Helm chart to the **non-prod** OCI registry(by devops):
+
+```sh
+helm push ctrlplane-11.1.9.tgz oci://icr.io/ipaas-non-prod/wm-apicp/charts
+```
+
+
 
 # Post-Setup Activities
 
