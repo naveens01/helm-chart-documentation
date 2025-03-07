@@ -95,7 +95,7 @@ Example Policy:
 | Regional Control Plane  | `ipaas-b0003-h01/wm-apicp/replicate-secret`     |
 
 
-### Required Secrets
+###Secrets
 
 | Secret Name                               | Value / Description                                      |
 |--------------------------------|-----------------------------------------------------------------|
